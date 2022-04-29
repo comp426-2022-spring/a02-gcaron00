@@ -6,7 +6,9 @@ const call = args.call // || console.error("Error: no input. \nUsage: node guess
 if(call == null){
     console.error("Error: no input. \nUsage: node guess-flip --call=[heads|tails]"); 
 }  
-if(call != "heads" && call != "tails"){
+else if(call != "heads" && call != "tails"){
     console.error("Error: no input. \nUsage: node guess-flip --call=[heads|tails]"); 
-} 
-console.log(myModule.flipACoin(call))
+} else {
+    console.log(myModule.flipACoin(call))
+}
+
